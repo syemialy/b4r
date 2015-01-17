@@ -1,15 +1,30 @@
 {
   "manifest_version": 2,
-
-  "name": "Baraholka 4 Real",
-  "description": "This extension helps you estimate true prices on goods listed in Baraholka",
-  "version": "1.8.16",
+  "name": "Baraholka USDPriced",
+  "description": "This extension helps you estimate USD prices on goods and services advertised in baraholka",
+  "version": "2.2",
+  "icons": { "16": "images/1421510967_internt_web_technology-09-16.png",
+           "48": "images/1421510967_internt_web_technology-09-48.png",
+          "128": "images/1421510967_internt_web_technology-09-128.png" },
+  "permissions": [
+        "http://ab.onliner.by/*",
+        "http://mb.onliner.by/*",
+        "http://baraholka.onliner.by/*",
+        "activeTab"
+  ],
   "page_action": {
-    "default_icon": "icon.png",
-    "default_title": "Show $ price"
+    "default_icon": { 
+            "19": "images/1421510967_internt_web_technology-09-19.png",
+            "38": "images/1421510967_internt_web_technology-09-38.png"
+          },
+    "default_title": "Понятные цены для барахолки"
   },
+  "background": {
+        "scripts": ["b4r-background.js"],
+        "persistent": false
+    },
   "content_scripts": [{
-    "matches" : ["http://ab.onliner.by/*"],
+    "matches" : ["http://ab.onliner.by/*", "http://mb.onliner.by/*", "http://baraholka.onliner.by/*"],
     "js": ["jquery-1.11.2.min.js","b4r-usd.js"]
   }]
 }
