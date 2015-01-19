@@ -1,8 +1,9 @@
 {
   "manifest_version": 2,
   "name": "Baraholka USDPriced",
-  "description": "This extension helps you estimate USD prices on goods and services advertised in baraholka",
-  "version": "2.2",
+  "short_name" : "USDPriced",
+  "description": "Конвертор цен портала Onliner.by указанных в беларуских рублях в доллары США по самому выгодному курсу продажи на текущйи день.",
+  "version": "2.3",
   "icons": { "16": "images/1421510967_internt_web_technology-09-16.png",
            "48": "images/1421510967_internt_web_technology-09-48.png",
           "128": "images/1421510967_internt_web_technology-09-128.png" },
